@@ -9,7 +9,7 @@ RUN apt-get update && \
 RUN wget https://minergate.com/download/deb-cli && \
     dpkg -i deb-cli
     
-ENV USER miner@bitbuy.io
+ENV USER mariusbudrys@inbox.lt
 ENV COIN -bcn
 
 ENTRYPOINT minergate-cli -user $USER $COIN
